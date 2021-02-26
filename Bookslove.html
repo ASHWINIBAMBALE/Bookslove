@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheetbook.css" >
+    <script src="https://kit.fontawesome.com/104d867de0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <div class="navlogo">
+                <p> bookslove</p>
+            </div>
+
+                <div class="navlinks" id="navlinks">
+                    <i class="fa fa-close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="#"><li>HOME</li></a>
+                        <a href="#"><li>ABOUT</li></a>
+                        <a href="#"><li>PRICE</li></a>
+
+                    </ul>
+                    <button type="button" class="btn"><i class="fas fa-sign-in-alt"></i>  Sign up</button>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </div>
+        <div class="title">
+            <h1>In the<span> end,</span>  <br>we’ll <span>all</span> become <span>stories</span>.</h1>
+            <button type="button" class="btn">Expoler</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="serach-icon ">
+                <i class="fa fa-list "></i>
+                <i class="fa fa-search"></i>
+
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="contents">
+                <small>I do believe something very magical can happen when you read a book.</small>
+                <p>
+                <a href="#">PREV</a><a href="#">NEXT</a>
+                </p>
+            </div>
+            <div class="notification-img">
+                <img src="reading_girl.jpg"> 
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var show=document.getElementById("navlinks");
+        function showMenu(){
+            show.style.right="0";
+        }
+        function closeMenu(){
+            show.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
